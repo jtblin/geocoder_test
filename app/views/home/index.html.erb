@@ -1,4 +1,7 @@
 <h1>Geocoder Test</h1>
-<p><%= @result.inspect %></p>
-<p><%= @result["ip"] %></p>
-<p><%= @result["country_code"] %></p>
+<p>IP: <%= @result.ip %></p>
+<p>Country code: <%= @result.country_code %></p>
+<p>Latitude: <%= @result.latitude %></p>
+<p>Longitude: <%= @result.longitude %></p>
+
+<img src="http://maps.google.com/maps/api/staticmap?size=400x130&amp;maptype=roadmap&amp;sensor=false&amp;center=<%= @result.latitude %>%2C<%= @result.longitude %>&amp;zoom=12&amp;style=feature%3Aall%7Celement%3Aall%7Csaturation%3A-100&amp;markers=color%3A0xEE127B%7C-33.8861%2C151.214" id="result-map" width="400" height="130">

@@ -7,6 +7,8 @@ gem 'hiredis', '~> 0.3.1'
 gem 'redis', :require => ['redis/connection/hiredis', 'redis']
 gem 'redis-namespace'
 
+gem 'bootstrap-sass'
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
