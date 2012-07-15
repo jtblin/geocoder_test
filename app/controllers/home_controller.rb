@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
   def index
-    @result = request.location
+    @result = request.location.data 
     logger.info(request.location.inspect)
   end
 end
