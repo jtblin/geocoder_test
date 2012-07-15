@@ -3,11 +3,16 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.3'
 gem 'geocoder'
 
+gem 'hiredis', '~> 0.3.1'
+gem 'redis', :require => ['redis/connection/hiredis', 'redis']
+gem 'redis-namespace'
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 group :development, :test do
   gem 'sqlite3'
+  gem 'foreman'
 end
 
 group :production do
